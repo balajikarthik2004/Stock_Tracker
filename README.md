@@ -193,7 +193,7 @@ Bundle Size: Optimized with Next.js code splitting
    
    Social features and sharing
 
-**🤝 Contributing**
+# 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
@@ -218,8 +218,7 @@ Push to the branch (git push origin feature/AmazingFeature)
 Open a Pull Request
 
   
-
-**📝 License**
+# 📝 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
@@ -243,7 +242,7 @@ Recharts for beautiful chart components
 
   
 
-**📞 Support**
+# 📞 Support
 
 If you have any questions or need help, please open an issue on GitHub or contact:
 
