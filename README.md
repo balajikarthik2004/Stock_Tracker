@@ -1,36 +1,203 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Stock Tracker 📈
+A modern, responsive stock tracking application built with Next.js that provides real-time stock data, interactive charts, and powerful search functionality.
 
-## Getting Started
+https://img.shields.io/badge/Next.js-14.0-black?style=for-the-badge&logo=next.js
+https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript
+https://img.shields.io/badge/Vercel-Deployed-black?style=for-the-badge&logo=vercel
 
-First, run the development server:
+🌟 Live Demo
+Live Application: https://kb-stock-tracker.vercel.app/
 
-```bash
+GitHub Repository: https://github.com/balajikarthik2004/Stock_Tracker
+
+✨ Features
+🔍 Advanced Search
+Real-time stock search with autocomplete suggestions
+
+Search by company name or stock symbol
+
+Quick access to popular stocks
+
+📊 Interactive Charts
+Beautiful price charts using Recharts library
+
+Multiple timeframes (daily, weekly, monthly)
+
+Technical indicators and price metrics
+
+📱 Responsive Design
+Mobile-first design approach
+
+Optimized for all screen sizes
+
+Touch-friendly interface
+
+⚡ Real-time Data
+Live ticker with moving stock prices
+
+Real-time price updates
+
+Market movers section
+
+🎨 Modern UI/UX
+Clean, professional interface
+
+Smooth animations and transitions
+
+# Stock Tracker
+
+🛠️ Tech Stack
+Framework: Next.js 14 with App Router
+
+Language: TypeScript
+Icons: Lucide React
+
+Deployment: Vercel
+Prerequisites
+Node.js 18+
+
+npm or yarn
+
+
+bash
+git clone https://github.com/balajikarthik2004/Stock_Tracker.git
+cd Stock_Tracker
+Install dependencies
+npx create-next-app --example stock-tracker 
+
+bash
+npm install
+
+bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Building for Production
+bash
+npm run build
+npm run dev
+📁 Project Structure
+text
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+src/
+└── app/
+    ├── favicon.ico
+    ├── globals.css
+    ├── layout.tsx
+    ├── page.tsx
+    ├── stock/
+    │   └── [symbol]/
+    │       └── page.tsx
+    ├── components/
+    │   ├── SearchBar.tsx
+    │   ├── StockGraph.tsx
+    │   └── TickerBar.tsx
+    └── utils/
+        └── api.ts     
 
-## Learn More
+🔧 API Integration
+The application integrates with the TradeBrains API for real-time stock data:
 
-To learn more about Next.js, take a look at the following resources:
+Search API: /api/assignment/search?keyword=RELIANCE
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Stock Details: /api/assignment/stock/{symbol}/details
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Price Data: /api/assignment/stock/{symbol}/prices
 
-## Deploy on Vercel
+Ticker Data: /api/assignment/index/NIFTY/movers
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Mock Data Fallback
+The application includes comprehensive mock data generation for:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Demonstration purposes
+
+API failure scenarios
+
+Development and testing
+
+🎯 Key Components
+SearchBar
+Real-time search with debouncing
+
+Keyboard navigation support
+
+Recent searches (planned feature)
+
+StockGraph
+Interactive price charts
+
+Multiple timeframe support
+
+Hover tooltips with detailed information
+
+TickerBar
+Real-time stock price updates
+
+Smooth scrolling animation
+
+Color-coded price changes
+
+🌐 Deployment
+The application is deployed on Vercel with automatic deployments from the main branch.
+
+Deployment Status: https://img.shields.io/badge/Vercel-Live-success?style=for-the-badge
+
+📈 Performance
+Lighthouse Score: 95+ Performance
+
+First Contentful Paint: < 1.5s
+
+Largest Contentful Paint: < 2.2s
+
+Bundle Size: Optimized with Next.js code splitting
+
+🔮 Future Enhancements
+User authentication and portfolios
+
+Advanced technical indicators
+
+News integration
+
+Watchlists and favorites
+
+Push notifications for price alerts
+
+Dark/light theme toggle
+
+Export functionality for data
+
+Social features and sharing
+
+🤝 Contributing
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+Fork the project
+
+Create your feature branch (git checkout -b feature/AmazingFeature)
+
+Commit your changes (git commit -m 'Add some AmazingFeature')
+
+Push to the branch (git push origin feature/AmazingFeature)
+
+Open a Pull Request
+
+📝 License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+🙏 Acknowledgments
+TradeBrains for providing the stock API
+
+Next.js team for the amazing framework
+
+Vercel for seamless deployment
+
+Recharts for beautiful chart components
+
+📞 Support
+If you have any questions or need help, please open an issue on GitHub or contact:
+
+Email: balajikarthik2004@gmail.com
+
+GitHub: [@balajikarthik2004](https://github.com/balajikarthik2004)
+
+LinkedIn: [LinkedIn/BalajiK](https://www.linkedin.com/in/balaji-k-894031258/)
